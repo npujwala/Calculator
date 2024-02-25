@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculator.css">
+  <title>Calculator project</title>
+</head>
+<body>
+  <center id="calci">
+    <h1 id="title">Calculator</h1>
+    <div id="container">
+        <input type="text" id="input-text" size="30" >
+        <br>
+        <div id="sub-container">
+          <div class="div-1">
+          <button class="bt-1" onClick="display(1)"><b>1</b></button>
+          <button class="bt-1" onClick="display(2)"><b>2</b></button>
+          <button class="bt-1" onClick="display(3)"><b>3</b></button>
+          <button class="bt-1"onClick="display(`+`)"><b>+</b></button>
+          </div>
+         <div class="div-1">
+          <button class="bt-1" onClick="display(4)"><b>4</b></button>
+          <button class="bt-1" onClick="display(5)"><b>5</b></button>
+          <button class="bt-1" onClick="display(6)"><b>6</b></button>
+          <button class="bt-1" onClick="display(`-`)"><b>-</b></button>
+         </div>
+         <div class="div-1">
+          <button class="bt-1" onClick="display(7)"><b>7</b></button>
+          <button class="bt-1" onClick="display(8)"><b>8</b></button>
+          <button class="bt-1" onClick="display(9)"><b>9</b></button>
+          <button class="bt-1" onClick="display(`*`)"><b>*</b></button>
+         </div>
+        <div class="div-1">
+        <button class="bt-1" onClick="display(`.`)"><b>.</b></button>
+        <button class="bt-1" onClick="display(`/`)"><b>/</b></button>
+        <button class="bt-1" onClick="display(`%`)"><b>%</b></button>
+        <button class="bt-1" onClick="result()"><b>=</b></button>
+        </div> 
+        <button class="bt-1" onClick="clearinput()"><b>Clear</b></button>
+    </div>
+    </div>
+  </center>
+  <script>
+    //var data=document.querySelector("#input-text").value;
+    function display(x)
+    {
+      let data=document.getElementById("input-text");
+      data.value += x;
+      document.getElementById("input-text").innerText=data.value;
+    }
+    function result()
+    {
+      let question=document.getElementById("input-text");
+      let answer=eval(question.value);
+      question.value=answer;
+    }
+    function clearinput(){
+      let input_data=document.getElementById("input-text");
+      input_data.value="";
+    }
+  </script>
+</body>
+</html>
