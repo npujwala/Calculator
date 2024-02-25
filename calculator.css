@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+#calci{
+  border: 4mm ridge rgba(23, 92, 210, 0.562);
+ /*border: 0.4rem solid rgba(240, 203, 37, 0.935);*/
+ /*border: thick double #e9d92b;*/
+ background-color:rgb(202, 215, 227);
+ box-sizing: content-box;
+ width:fit-content;
+ margin: 0em auto;
+}
+#title{
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size:30px;
+  color:rgba(201, 55, 10, 0.951)
+}
+#input-text{
+margin:5px 9px;
+font-size:20px;
+}
+#sub-container{
+  padding: 20px 50px;
+}
+.bt-1 {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  margin:10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(99, 51, 177, 0.431);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+.bt-1:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+.bt-1:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
